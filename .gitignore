@@ -1,3 +1,5 @@
+mysite/db.sqlite3
+python-virtual-enviroments
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
