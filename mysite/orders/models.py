@@ -1,3 +1,4 @@
+
 from django.contrib.auth.models import User
 from django.db import models
 from django.utils import timezone
@@ -13,3 +14,6 @@ class Order(models.Model):
     published = models.DateTimeField(default=timezone.now)
     deadline_date = models.DateTimeField('deadline date')
     offers = models.ManyToManyField(Offer)
+    email = models.EmailField(max_length=70, null=True, blank=True, unique=True)
+    phone_number = models.IntegerField(max_length=13, default=0)
+
